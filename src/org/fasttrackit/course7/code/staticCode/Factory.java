@@ -1,4 +1,4 @@
-package org.fasttrackit.course7.code;
+package org.fasttrackit.course7.code.staticCode;
 
 import java.util.Random;
 
@@ -17,5 +17,7 @@ public class Factory {
         }
 
         System.out.println(Audi.soldCars);
+
+        String[] splitedString = StringUtils.splitString("I.have.an.Audi", "\\.");
     }
 }

@@ -1,14 +1,16 @@
-package org.fasttrackit.course7.code;
+package org.fasttrackit.course7.code.staticCode;
 
 public class Audi {
     private static final String name = "Audi";
     public static int soldCars;
+    private static int createdCars;
     private int horsePower;
     private long kilometers;
 
     public Audi(int horsePower, long kilometers) {
         this.horsePower = horsePower;
         this.kilometers = kilometers;
+        createdCars++;
     }
 
     public String getName() {
@@ -23,8 +25,12 @@ public class Audi {
         return kilometers;
     }
 
-    public void soldCar(){
+    public void soldCar() {
         soldCars++;
+    }
+
+    public static void howDoYouRoar() {
+        System.out.println("roar");
     }
 
     @Override
