@@ -3,7 +3,7 @@ package org.fasttrackit.course7.code.staticCode;
 public class Audi {
     private static final String name = "Audi";
     public static int soldCars;
-    private static int createdCars;
+    public static int createdCars;
     private int horsePower;
     private long kilometers;
 
@@ -25,7 +25,7 @@ public class Audi {
         return kilometers;
     }
 
-    public void soldCar() {
+    public void sellCar() {
         soldCars++;
     }
 

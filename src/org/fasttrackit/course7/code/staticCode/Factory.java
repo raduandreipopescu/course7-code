@@ -1,5 +1,6 @@
 package org.fasttrackit.course7.code.staticCode;
 
+import java.sql.SQLOutput;
 import java.util.Random;
 
 public class Factory {
@@ -13,11 +14,21 @@ public class Factory {
 
         for (Audi audi : cars) {
             System.out.println(audi);
-            audi.soldCar();
+            audi.sellCar();
         }
 
         System.out.println(Audi.soldCars);
 
+        Audi audi11 = new Audi(466, 5);
+        Audi audi12 = new Audi(366, 50);
+
+        System.out.println(Audi.createdCars);
+
+        Audi.howDoYouRoar();
+
         String[] splitedString = StringUtils.splitString("I.have.an.Audi", "\\.");
+        for (String split : splitedString){
+            System.out.println(split);
+        }
     }
 }
